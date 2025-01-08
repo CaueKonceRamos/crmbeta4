@@ -1,0 +1,304 @@
+<html lang="pt-BR">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   CRM ETERNAL - Criação de Sites
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-900 text-gray-200">
+  <header class="bg-red-900 p-4 shadow-md">
+   <div class="container mx-auto flex justify-between items-center">
+    <h1 class="text-3xl font-bold">
+     CRM ETERNAL
+    </h1>
+    <nav class="hidden md:flex space-x-4">
+     <a class="hover:text-gray-400" href="#inicio">
+      Início
+     </a>
+     <a class="hover:text-gray-400" href="#sobre-nos">
+      Sobre Nós
+     </a>
+     <a class="hover:text-gray-400" href="#catalogo">
+      Catálogo
+     </a>
+     <a class="hover:text-gray-400" href="#trabalhos">
+      Visite Nossos Trabalhos
+     </a>
+     <a class="hover:text-gray-400" href="#contato">
+      Contato
+     </a>
+    </nav>
+    <div class="md:hidden">
+     <button class="text-white focus:outline-none" id="menu-button">
+      <i class="fas fa-bars text-2xl">
+      </i>
+     </button>
+    </div>
+   </div>
+  </header>
+  <nav class="hidden md:hidden bg-red-900 p-4 space-y-2" id="mobile-menu">
+   <a class="block hover:text-gray-400" href="#inicio">
+    Início
+   </a>
+   <a class="block hover:text-gray-400" href="#sobre-nos">
+    Sobre Nós
+   </a>
+   <a class="block hover:text-gray-400" href="#catalogo">
+    Catálogo
+   </a>
+   <a class="block hover:text-gray-400" href="#trabalhos">
+    Visite Nossos Trabalhos
+   </a>
+   <a class="block hover:text-gray-400" href="#contato">
+    Contato
+   </a>
+  </nav>
+  <section class="py-8" id="inicio">
+   <div class="container mx-auto">
+    <div class="relative w-full overflow-hidden">
+     <div class="carousel relative">
+      <div class="carousel-item">
+       <img alt="Imagem de uma notícia com estilo de desenho animado dos anos 90, mostrando um personagem em um cenário vibrante e colorido" class="w-full" height="400" src="https://storage.googleapis.com/a1aa/image/FMdaU7vPMs6uD9xKcPltKrbYYa66SLKpC7jjZ3YBV4on1wAF.jpg" width="800"/>
+       <div class="absolute bottom-0 left-0 bg-gray-800 bg-opacity-75 p-4 w-full">
+        <h3 class="text-xl font-bold">
+         Título da Notícia 1
+        </h3>
+        <p class="text-lg">
+         Subtítulo da Notícia 1
+        </p>
+        <a class="mt-2 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700" href="#">
+         Acessar Notícia
+        </a>
+       </div>
+      </div>
+      <div class="carousel-item hidden">
+       <img alt="Imagem de uma notícia com estilo de desenho animado dos anos 90, mostrando um personagem em um cenário vibrante e colorido" class="w-full" height="400" src="https://storage.googleapis.com/a1aa/image/FMdaU7vPMs6uD9xKcPltKrbYYa66SLKpC7jjZ3YBV4on1wAF.jpg" width="800"/>
+       <div class="absolute bottom-0 left-0 bg-gray-800 bg-opacity-75 p-4 w-full">
+        <h3 class="text-xl font-bold">
+         Título da Notícia 2
+        </h3>
+        <p class="text-lg">
+         Subtítulo da Notícia 2
+        </p>
+        <a class="mt-2 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700" href="#">
+         Acessar Notícia
+        </a>
+       </div>
+      </div>
+      <div class="carousel-item hidden">
+       <img alt="Imagem de uma notícia com estilo de desenho animado dos anos 90, mostrando um personagem em um cenário vibrante e colorido" class="w-full" height="400" src="https://storage.googleapis.com/a1aa/image/FMdaU7vPMs6uD9xKcPltKrbYYa66SLKpC7jjZ3YBV4on1wAF.jpg" width="800"/>
+       <div class="absolute bottom-0 left-0 bg-gray-800 bg-opacity-75 p-4 w-full">
+        <h3 class="text-xl font-bold">
+         Título da Notícia 3
+        </h3>
+        <p class="text-lg">
+         Subtítulo da Notícia 3
+        </p>
+        <a class="mt-2 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700" href="#">
+         Acessar Notícia
+        </a>
+       </div>
+      </div>
+     </div>
+     <button class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 bg-opacity-75 p-2" id="prev-button">
+      <i class="fas fa-chevron-left text-white">
+      </i>
+     </button>
+     <button class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 bg-opacity-75 p-2" id="next-button">
+      <i class="fas fa-chevron-right text-white">
+      </i>
+     </button>
+    </div>
+   </div>
+  </section>
+  <section class="py-8 bg-gray-800" id="sobre-nos">
+   <div class="container mx-auto text-center">
+    <h2 class="text-2xl font-bold mb-4">
+     Sobre Nós
+    </h2>
+    <p class="text-lg">
+     Somos a CRM ETERNAL, especialistas na criação de sites com um toque único e nostálgico, inspirado nos desenhos animados dos anos 90. Nosso objetivo é trazer a magia e a diversão desses tempos para o mundo digital.
+    </p>
+   </div>
+  </section>
+  <section class="py-8" id="catalogo">
+   <div class="container mx-auto">
+    <h2 class="text-2xl font-bold mb-4 text-center">
+     Catálogo
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+     <div class="bg-gray-800 p-4 shadow-md">
+      <img alt="Imagem de um site de salão de beleza com estilo de desenho animado dos anos 90" height="200" src="https://storage.googleapis.com/a1aa/image/1FVE9gZRMWpFPpCgVltmQlCUTfkH9RRRT69OHoGJ5D8JrhBKA.jpg" width="400"/>
+      <h3 class="text-xl font-bold mt-2">
+       Salão de Beleza
+      </h3>
+      <a class="text-blue-400 hover:underline" href="#">
+       Visitar Site
+      </a>
+     </div>
+     <div class="bg-gray-800 p-4 shadow-md">
+      <img alt="Imagem de um site de pizzaria com estilo de desenho animado dos anos 90" height="200" src="https://storage.googleapis.com/a1aa/image/yzwyqBMLMsp5PBspzs1KKZsUtWp1VfpMKX4NPDJfJMpVWDDUA.jpg" width="400"/>
+      <h3 class="text-xl font-bold mt-2">
+       Pizzaria
+      </h3>
+      <a class="text-blue-400 hover:underline" href="#">
+       Visitar Site
+      </a>
+     </div>
+     <div class="bg-gray-800 p-4 shadow-md">
+      <img alt="Imagem de um site de escritório com estilo de desenho animado dos anos 90" height="200" src="https://storage.googleapis.com/a1aa/image/pvvZiFK6YWrAO55VStyawUSvfLMIrhMBCzgYMKqeUHchWDDUA.jpg" width="400"/>
+      <h3 class="text-xl font-bold mt-2">
+       Escritório
+      </h3>
+      <a class="text-blue-400 hover:underline" href="#">
+       Visitar Site
+      </a>
+     </div>
+     <div class="bg-gray-800 p-4 shadow-md">
+      <img alt="Imagem de um site de loja de roupas com estilo de desenho animado dos anos 90" height="200" src="https://storage.googleapis.com/a1aa/image/EmVHJi7rQ0ZVDlKHh0SijNCIIlY5KizpWyW1LeqFXaeRWDDUA.jpg" width="400"/>
+      <h3 class="text-xl font-bold mt-2">
+       Loja de Roupas
+      </h3>
+      <a class="text-blue-400 hover:underline" href="#">
+       Visitar Site
+      </a>
+     </div>
+     <div class="bg-gray-800 p-4 shadow-md">
+      <img alt="Imagem de um site de loja de games com estilo de desenho animado dos anos 90" height="200" src="https://storage.googleapis.com/a1aa/image/wzPj5MeP95y8Nig89LB8z4vs64OqfafbTWjbgaUKp4deYNMQB.jpg" width="400"/>
+      <h3 class="text-xl font-bold mt-2">
+       Loja de Games
+      </h3>
+      <a class="text-blue-400 hover:underline" href="#">
+       Visitar Site
+      </a>
+     </div>
+     <div class="bg-gray-800 p-4 shadow-md">
+      <img alt="Imagem de um site de loja virtual com estilo de desenho animado dos anos 90" height="200" src="https://storage.googleapis.com/a1aa/image/3Jlr2npTpsJEDlw3BbgGioM0DqWBG3dXcM0W1Us1eM8FrhBKA.jpg" width="400"/>
+      <h3 class="text-xl font-bold mt-2">
+       Loja Virtual
+      </h3>
+      <a class="text-blue-400 hover:underline" href="#">
+       Visitar Site
+      </a>
+     </div>
+     <div class="bg-gray-800 p-4 shadow-md">
+      <img alt="Imagem de um site de papelaria com estilo de desenho animado dos anos 90" height="200" src="https://storage.googleapis.com/a1aa/image/Q3B4gTkTyaZpIx3PZ7hAK35nz8uvmtq1bOshZGfMHsRLrhBKA.jpg" width="400"/>
+      <h3 class="text-xl font-bold mt-2">
+       Papelaria
+      </h3>
+      <a class="text-blue-400 hover:underline" href="#">
+       Visitar Site
+      </a>
+     </div>
+     <div class="bg-gray-800 p-4 shadow-md">
+      <img alt="Imagem de um site de restaurante com estilo de desenho animado dos anos 90" height="200" src="https://storage.googleapis.com/a1aa/image/TygehYyCNsWGEigTWQfeIlojtzciC7LBZGgRjntYPcSwsGGoA.jpg" width="400"/>
+      <h3 class="text-xl font-bold mt-2">
+       Restaurante
+      </h3>
+      <a class="text-blue-400 hover:underline" href="#">
+       Visitar Site
+      </a>
+     </div>
+     <div class="bg-gray-800 p-4 shadow-md">
+      <img alt="Imagem de um site de academia com estilo de desenho animado dos anos 90" height="200" src="https://storage.googleapis.com/a1aa/image/eRGNLWnsKWwfgkuj7aGodNfEz5a0UugzWqGYxfFLoOI3YNMQB.jpg" width="400"/>
+      <h3 class="text-xl font-bold mt-2">
+       Academia
+      </h3>
+      <a class="text-blue-400 hover:underline" href="#">
+       Visitar Site
+      </a>
+     </div>
+     <div class="bg-gray-800 p-4 shadow-md">
+      <img alt="Imagem de um site de pet shop com estilo de desenho animado dos anos 90" height="200" src="https://storage.googleapis.com/a1aa/image/fDF7GMqN1XRweEk1zWkF2ivRfieYrMAEUE6l8DF3LJWwZNMQB.jpg" width="400"/>
+      <h3 class="text-xl font-bold mt-2">
+       Pet Shop
+      </h3>
+      <a class="text-blue-400 hover:underline" href="#">
+       Visitar Site
+      </a>
+     </div>
+     <div class="bg-gray-800 p-4 shadow-md">
+      <img alt="Imagem de um site de floricultura com estilo de desenho animado dos anos 90" height="200" src="https://storage.googleapis.com/a1aa/image/I7ITnCKJOrrmCNFfxpqj11QuKkdHXt4aAeSiwUhDoPcKWDDUA.jpg" width="400"/>
+      <h3 class="text-xl font-bold mt-2">
+       Floricultura
+      </h3>
+      <a class="text-blue-400 hover:underline" href="#">
+       Visitar Site
+      </a>
+     </div>
+     <div class="bg-gray-800 p-4 shadow-md">
+      <img alt="Imagem de um site de livraria com estilo de desenho animado dos anos 90" height="200" src="https://storage.googleapis.com/a1aa/image/LdfydbwUehrcG0SMwyDjFpDRuLL7dT47xIUGxPkCLvBaWDDUA.jpg" width="400"/>
+      <h3 class="text-xl font-bold mt-2">
+       Livraria
+      </h3>
+      <a class="text-blue-400 hover:underline" href="#">
+       Visitar Site
+      </a>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="py-8 bg-gray-800" id="trabalhos">
+   <div class="container mx-auto">
+    <h2 class="text-2xl font-bold mb-4 text-center">
+     Visite Nossos Trabalhos
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+     <div class="bg-gray-800 p-4 shadow-md">
+      <img alt="Imagem de um site de portfólio de trabalho com estilo de desenho animado dos anos 90" height="200" src="https://storage.googleapis.com/a1aa/image/prdNZAJiHJZebaR6eT5wsFw0AkpfZwZf8jF3fUhgWDC5zaYgC.jpg" width="400"/>
+      <h3 class="text-xl font-bold mt-2">
+       Trabalho 1
+      </h3>
+      <a class="text-blue-400 hover:underline" href="#">
+       Visitar Site
+      </a>
+     </div>
+     <div class="bg-gray-800 p-4 shadow-md">
+      <img alt="Imagem de um site de portfólio de trabalho com estilo de desenho animado dos anos 90" height="200" src="https://storage.googleapis.com/a1aa/image/prdNZAJiHJZebaR6eT5wsFw0AkpfZwZf8jF3fUhgWDC5zaYgC.jpg" width="400"/>
+      <h3 class="text-xl font-bold mt-2">
+       Trabalho 2
+      </h3>
+      <a class="text-blue-400 hover:underline" href="#">
+       Visitar Site
+      </a>
+     </div>
+     <div class="bg-gray-800 p-4 shadow-md">
+      <img alt="Imagem de um site de portfólio de trabalho com estilo de desenho animado dos anos 90" height="200" src="https://storage.googleapis.com/a1aa/image/prdNZAJiHJZebaR6eT5wsFw0AkpfZwZf8jF3fUhgWDC5zaYgC.jpg" width="400"/>
+      <h3 class="text-xl font-bold mt-2">
+       Trabalho 3
+      </h3>
+      <a class="text-blue-400 hover:underline" href="#">
+       Visitar Site
+      </a>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="py-8 bg-gray-800" id="contato">
+   <div class="container mx-auto text-center">
+    <h2 class="text-2xl font-bold mb-4">
+     Contato
+    </h2>
+    <p class="text-lg mb-4">
+     Entre em contato conosco através das nossas redes sociais:
+    </p>
+    <div class="flex justify-center space-x-4">
+     <a class="text-green-500 text-3xl" href="https://wa.me/1234567890">
+      <i class="fab fa-whatsapp">
+      </i>
+     </a>
+     <a class="text-pink-500 text-3xl" href="https://instagram.com">
+      <i class="fab fa-instagram">
+      </i>
+     </a>
+     <a class="text-blue-500 text-3

@@ -1,0 +1,74 @@
+/* Estilos gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1a202c; /* Fundo escuro */
+    color: #e2e8f0; /* Texto claro */
+}
+
+/* Header */
+header {
+    background-color: #c53030; /* Cor de fundo vermelha */
+    padding: 1rem;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* Menu de navegação */
+nav {
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #63b3ed; /* Cor ao passar o mouse (azul claro) */
+}
+
+/* Menu hamburguer para mobile */
+#menu-button {
+    display: none; /* Inicialmente escondido em telas grandes */
+}
+
+#mobile-menu {
+    display: none; /* Inicialmente escondido */
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#mobile-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+    background-color: #e53e3e; /* Fundo vermelho para links no menu mobile */
+    transition: background-color 0.3s ease;
+}
+
+#mobile-menu a:hover {
+    background-color: #c53030; /* Fundo mais escuro ao passar o mouse */
+}
+
+/* Responsividade - Exibe o botão hamburguer e esconde o menu em telas menores */
+@media (max-width: 1024px) {
+    #menu-button {
+        display: block; /* Exibe o botão hamburguer em telas pequenas */
+    }
+
+    nav {
+        display: none; /* Esconde o menu de navegação em telas pequenas */
+    }
+
+    #mobile-menu {
+        display: flex; /* Exibe o menu mobile ao clicar no botão */
+    }
+}
